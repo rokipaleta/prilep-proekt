@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation"
 
+
 export default function Home() {
 
   const router = useRouter();
@@ -9,10 +10,10 @@ export default function Home() {
 
   return (
     <div>
-      <main>
-        <div className="p-[20px] rounded-xl text-center">
+      <main className="ova">
+        <div className="container">
           <h2 className="text6">Листа на автобуски станици</h2>
-          <ul>
+          <ul  className="towns-list">
             <li><a className="cursor-pointer" onClick={() => router.push("/avtobuska-prilep")}>Прилеп</a></li>
             <li><a href="link-to-skopje">Скопје</a></li>
             <li><a href="link-to-tetovo">Тетово</a></li>
@@ -37,22 +38,15 @@ export default function Home() {
             <li><a href="link-to-kriva-palanka">Крива Паланка</a></li>
             <li><a href="link-to-krushevo">Крушево</a></li>
             <li><a href="link-to-struga">Струга</a></li>
-            <li><a href="link-to-resen">Ресен</a></li>
-            <li><a href="link-to-valandovo">Валандово</a></li>
-            <li><a href="link-to-sveti-nikole">Свети Николе</a></li>
-            <li><a href="link-to-berovo">Берово</a></li>
+            
           </ul>
         </div>
 
 
-        <h3 className="text5">
-          Пронајди ја својата станица
-        </h3>
-
-        <h4 className="small-text">
-          Пронајди ја својата дестинација...
-        </h4>
+        
       </main>
     </div>
   )
 }
+
+ 
